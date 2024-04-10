@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact Form</title>
+
+  <link rel="stylesheet" href="style2.css">
+
+</head>
+
+<body>
+
+  <h1>Contact Form</h1>
+
+  <form action="/submit-contact-form" method="post">
+
+    <div>
+
+      <label for="pseudo">Pseudo:</label>
+
+      <input type="text" id="pseudo" name="pseudo" required>
+
+    </div>
+
+    <div>
+
+      <label for="password">Mot de passe:</label>
+
+      <input type="password" id="password" name="password" required>
+
+    </div>
+
+    <div>
+
+      <label for="email">Email:</label>
+
+      <input type="email" id="email" name="email" required>
+
+    </div>
+
+    <div>
+
+      <label for="object">Objet du message:</label>
+
+      <input type="text" id="object" name="object" required>
+
+    </div>
+
+    <div>
+
+      <label for="message">Votre message:</label>
+
+      <textarea id="message" name="message" required></textarea>
+
+    </div>
+
+    <div>
+
+      <label for="urgency">Niveau d'urgence:</label>
+
+      <select id="urgency" name="urgency" required>
+
+        <option value="">Choisir une option</option>
+
+        <option value="low">basse</option>
+
+        <option value="medium">moyenne</option>
+
+        <option value="high">haute</option>
+
+      </select>
+
+    </div>
+
+    <div>
+
+      <input type="checkbox" id="privacy" name="privacy" required>
+
+      <label for="privacy">J'accepte la politique de confidentialité</label>
+
+    </div>
+
+    <div>
+
+      <button type="submit">Envoyer</button>
+
+    </div>
+
+  </form>
+
+</body>
+
+</html>
