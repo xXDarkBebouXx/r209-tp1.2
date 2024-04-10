@@ -1,0 +1,131 @@
+
+header {
+
+    display: flex;
+  
+    justify-content: space-between;
+  
+    align-items: center;
+  
+    padding: 20px;
+  
+    background-color: #011820;
+    border-bottom:  1px solid #FFFFFF ;
+    color:  #FFFFFF;
+  
+  }
+
+header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header ul li {
+    padding:0 .5rem;
+}
+
+.grid-container {
+
+    display: grid;
+  
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  
+    grid-gap: 5px;
+  
+    padding: 5px;
+  
+  }
+  
+  
+  .grid-container img {
+  width: 100%;
+  object-fit: cover;
+  
+  }
+  body {
+    margin:0;
+    background-color: #011820;
+  }
+
+  main {
+    color:#FFFFFF;
+    width: 80%;
+    margin: auto;
+
+  }
+  main h2 {
+    font-family: 'Montserrat','sans-serif';
+    font-size: 60px;
+  }
+  main span{
+    color: #00d6a1;
+  }
+  header h1 {
+
+    font-size: 3rem;
+
+    font-family: 'Montserrat';
+
+    color: #FFFFFF;
+
+  }
+  nav button{
+    background: transparent;
+    border: none;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+  }
+  nav button:nth-child(2){
+    background-color: #00d6a1;
+  }
+  footer{
+    color: gray;
+    text-align: center;
+  }
+  .caca {
+    margin-left: 35%;
+  }
+  main p {
+    color: gray;
+  }
+  @media screen and (max-width: 1024px) {
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 6px;
+        }
+        nav button {
+            font-size: 10px;
+            padding: 4px;
+            margin: 0;
+        }
+  }
+  @media screen and (max-width:640px) {
+    main {width: 90%;
+    }
+    h2 {
+       font-size: 24px; 
+    }
+    .grid-container img:nth-child(n+10) {
+        display: none;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 12px;
+    }
+    nav button {
+        font-size: 10px;
+        padding: 4px;
+        margin: 0;
+    }
+    main p {
+        width: 100%;
+
+    }  
+  }
+     
